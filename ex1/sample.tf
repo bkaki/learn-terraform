@@ -1,9 +1,9 @@
-resource "aws_instance" "web" {
+resource "aws_instance" "frontend" {
   ami           = ami-0b5a2b5b8f2be4ec2
-  instance_type = "t3.micro"
+  instance_type = "t3.microweb"
 
   tags = {
-    Name = "HelloWorld"
+    Name = "frontend"
   }
 }
 
