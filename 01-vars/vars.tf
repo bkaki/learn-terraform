@@ -17,6 +17,7 @@ output "sample_string" {
 
 # In above case we are just printing the variable, if the variable is a combinations of some strings then following in the syntax
 
- output "sample_string" {
-   value = "value of sample_string" = ${var.sample_string}
+ output "sample_string1" {
+   value = "value of sample_string = ${var.sample_string}"
+
  }
