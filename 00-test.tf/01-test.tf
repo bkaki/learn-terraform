@@ -7,9 +7,8 @@ resource "aws_instance" "workstation" {
   }
 }
 
-output "workstation" {
-  value = aws_instance.workstation.public_ip
-}
-
+ output "workstation" {
+   value = "aws_instance.workstation.public_ip"
+ }
 
 
