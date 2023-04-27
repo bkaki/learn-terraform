@@ -7,6 +7,6 @@ resource "aws_instance" "workstation" {
   }
 }
 
- outpout "frontend" {
-   value = aws_instance.frontend.public_ip
+ outpout "workstation" {
+   value = aws_instance.workstation.public_ip
  }
