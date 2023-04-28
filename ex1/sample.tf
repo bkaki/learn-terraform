@@ -59,7 +59,6 @@ resource "aws_instance" "mysql" {
     Name = "mysql"
   }
 
-
 }
 resource "aws_instance" "redis" {
   ami           = "ami-0b5a2b5b8f2be4ec2"
