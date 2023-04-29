@@ -1,26 +1,50 @@
-# How to declare a variable
-
 variable "sample_string" {
   default = "Hello World"
+}
+## Shell scripting equivalent sample_string="Hello World"
 
+variable "sample_number" {
+  default = 100
 }
 
-# shell scripting equivalent sample_string ”Hello World”
-# Terraform we have to write in this way by using syntaxes
-#To print in shell script we use echo command to print
-# echo $sample_string
+# 10.6 is also a number in terraform
 
-output "sample_string" {
-  value = var.sample_string
-
+variable "sample_boolean" {
+  default = true
 }
 
-# In above case we are just printing the variable, if the variable is a combinations of some strings then following in the syntax.
-# ${} is mandatory if we include the variable inside a string
+## Booleans are true or false
 
- output "sample_string1" {
-   value = "value of sample_string = ${var.sample_string}"
+# Booleans and numbers does not need to be quoted, Only strings need to be quoted that to be with double quotes. Terraform does support for Single quotes.
 
- }
+### Variable Types
+# So far we have seen is default variable type
 
+# We have list variable type , Meaning single variable can hold multiple values
+variable "sample_list" {
+  default = [
+    100,
+    "hello",
+    true,
+    123
+  ]
+}
 
+## Data type inside the list does not matter in terraform
+
+# We have a dictionary (or map), Meaning single variable will  have multiple values, & Each value is going to have a saperate name.
+
+variable "sample_dict" {
+  default = {
+    number1 = 100
+    string1 = "hello"
+    number2 = 123
+    boolean = true
+  }
+}
+
+## This is the most preferred variable over the list when we declare the data.
+
+variable "env" {}
+variable "auto_num1" {}
+variable "sample1" {}
