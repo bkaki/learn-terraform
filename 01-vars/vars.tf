@@ -21,6 +21,8 @@ variable "sample_boolean" {
 # So far we have seen is default variable type
 
 # We have list variable type , Meaning single variable can hold multiple values
+
+
 variable "sample_list" {
   default = [
     100,
