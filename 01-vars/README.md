@@ -1,3 +1,5 @@
+Topics of terrafom scripting
+
 Variables
 Functions
 Data Source
@@ -9,6 +11,7 @@ State File
 Loops
 Conditions
 output
+
 Terraform Variable Precedence
 -var-file
 *.auto.tfvars
