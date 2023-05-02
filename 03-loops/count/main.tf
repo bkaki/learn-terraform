@@ -11,9 +11,7 @@ variable "fruits" {
   default = [ "apple", "banana", "orange"]
 }
 
-  provisioner "local-exec" {
-    command = "echo Fruit Name -  ${var.fruits[count.index]}"
-  }
 
-}
+
+
 
