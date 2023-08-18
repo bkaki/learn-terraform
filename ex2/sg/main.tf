@@ -1,7 +1,6 @@
 resource "aws_security_group" "allow_tls" {
   name        = "allow_tls"
   description = "Allow TLS inbound traffic"
-  vpc_id      =
 
   ingress {
     description      = "TLS from VPC"
@@ -22,9 +21,5 @@ resource "aws_security_group" "allow_tls" {
   tags = {
     Name = "allow_tls"
   }
-}
-
-  output "sg-id" {
- value = aws_security_group.allow_tls.id
 }
 
